@@ -1,0 +1,28 @@
+.home-header {
+    background: $green-dark;
+    text-transform: uppercase;
+}
+
+.home-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+
+        a {
+            color: $white-shade;
+        }
+}
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .heading-img-container {
+        height: 80vh;
+        position: relative;
+        top: 2vh;
+        left: 25px;
+    }
+}

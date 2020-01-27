@@ -21,10 +21,23 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
     background: $white-shade;
+    font-family: $content-text;
+    font-size: 2rem;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
 }

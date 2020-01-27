@@ -1,0 +1,32 @@
+.home-nav {
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 29px;
+
+    .selected {
+        color: $accent;
+    }
+
+    & li:nth-of-type(3) {
+        font-family: $heading-text;
+        font-size: 3.5rem;
+    }
+}
+
+.heading-container h1 {
+    color: $white-shade;
+    font-family: $heading-text;
+    font-size: 10rem;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url(../assets/circle-text.png);
+        width: 137px;
+        height: 170px;
+        display: block;
+        position: absolute;
+        left: -50px;
+        top: -25px;
+    }
+}

@@ -194,10 +194,97 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
   background: #F6F6F6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.home-nav {
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 29px;
+}
+
+.home-nav .selected {
+  color: #E4A436;
+}
+
+.home-nav li:nth-of-type(3) {
+  font-family: "Abril Fatface", sans-serif;
+  font-size: 3.5rem;
+}
+
+.heading-container h1 {
+  color: #F6F6F6;
+  font-family: "Abril Fatface", sans-serif;
+  font-size: 10rem;
+  position: relative;
+}
+
+.heading-container h1::before {
+  content: '';
+  background-image: url(../assets/circle-text.png);
+  width: 137px;
+  height: 170px;
+  display: block;
+  position: absolute;
+  left: -50px;
+  top: -25px;
+}
+
+.home-header {
+  background: #345231;
+  text-transform: uppercase;
+}
+
+.home-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+}
+
+.home-nav a {
+  color: #F6F6F6;
+}
+
+.heading-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading-container .heading-img-container {
+  height: 80vh;
+  position: relative;
+  top: 2vh;
+  left: 25px;
 }
