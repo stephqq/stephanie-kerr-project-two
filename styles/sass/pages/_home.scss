@@ -1,23 +1,15 @@
+// HEADER STYLES - HOME PAGE
+
 .home-header {
     background: $green-dark;
     text-transform: uppercase;
-}
-
-.home-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-
-        a {
-            color: $white-shade;
-        }
 }
 
 .heading-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10vh;
 
     .heading-img-container {
         height: 80vh;
@@ -25,4 +17,30 @@
         top: 2vh;
         left: 25px;
     }
+}
+
+// SECTION STYLES - HOME PAGE
+
+section {
+    padding: 125px 0;
+}
+
+// SECTION WHO-IS-WILLOW STYLES - HOME PAGE
+
+.who-is-willow {
+    text-align: center;
+}
+
+// SECTION GRID STYLES - HOME PAGE
+
+.grid {
+    background: $white;
+}
+
+.grid-one {
+    background: $green-light;
+}
+
+.grid-four {
+    background: $green-dark;
 }

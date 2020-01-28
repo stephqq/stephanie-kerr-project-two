@@ -1,4 +1,21 @@
-.home-nav {
+// GLOBAL TYPOGRAPHY
+
+p {
+    margin-bottom: 25px;
+}
+
+p,
+button {
+    line-height: 3.2rem;
+}
+
+button {
+    font-family: $heading-text;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.top-nav {
     font-weight: 700;
     letter-spacing: 1px;
     line-height: 29px;
@@ -12,6 +29,8 @@
         font-size: 3.5rem;
     }
 }
+
+// HOME PAGE TYPOGRAPHY
 
 .heading-container h1 {
     color: $white-shade;
@@ -29,4 +48,20 @@
         left: -50px;
         top: -25px;
     }
+}
+
+.home-main h2,
+.home-main h3 {
+    font-family: $heading-text;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.home-main h2 {
+    font-size: 4.2rem;
+    margin-bottom: 25px;
+}
+
+.home-main h3 {
+    font-size: 3.2rem;
 }
