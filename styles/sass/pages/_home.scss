@@ -35,12 +35,132 @@ section {
 
 .grid {
     background: $white;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .grid-one,
+    .grid-two,
+    .grid-three,
+    .grid-four {
+        width: 50%;
+
+        .grid-inner-wrapper {
+            width: calc(1280px / 2);
+        }
+    }
+
+    .grid-one {
+        background: $green-light;
+        position: relative;
+        top: -30px;
+
+        img {
+            position: relative;
+            top: -20px;
+            right: 20px;
+        }
+    }
+
+    .grid-one,
+    .grid-three {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .grid-two div {
+        padding-left: 100px;
+    }
+
+    .grid-two,
+    .grid-three {
+        display: flex;
+        align-items: center;
+    }
+
+    .grid-three {
+        text-align: right;
+            div {
+                padding-right: 100px;
+            }
+    }
+
+    .grid-four {
+        background: $green-dark;
+        position: relative;
+        bottom: -30px;
+
+        img {
+            position: relative;
+            top: -20px;
+            right: 20px;
+        }
+    }
 }
 
-.grid-one {
-    background: $green-light;
+// SECTION JOURNEY STYLES - HOME PAGE
+
+.journey {
+    display: flex;
+
+    &-img-container {
+        width: 25%;
+        
+        img {
+            box-shadow: 20px 20px 0 0 $green-light;
+        }
+    }
+
+    &-content-container {
+        width: 75%;
+        padding-left: 110px;
+    }
 }
 
-.grid-four {
-    background: $green-dark;
+// SECTION STRETCH IMG STYLES - HOME PAGE
+
+.stretch-image {
+    padding: 0;
+}
+
+// SECTION GALLERY STYLES - HOME PAGE
+
+.gallery {
+    background: $white;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            width: calc(100% / 3 - 30px);
+        }
+    }
+}
+
+// SECTION SUMMARY STYLES - HOME PAGE
+
+.summary ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+
+        i {
+            background: $accent;
+            padding: 10px;
+            border-radius: 50%;
+        }
+
+        div {
+            padding-left: 25px;
+        }
+
+        .b-padding {
+            padding-bottom: 50px;
+        }
+    }
 }
