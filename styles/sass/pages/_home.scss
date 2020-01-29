@@ -16,6 +16,7 @@
         position: relative;
         top: 2vh;
         left: 25px;
+        max-width: 50%;
     }
 }
 
@@ -46,7 +47,7 @@ section {
         width: 50%;
 
         .grid-inner-wrapper {
-            width: calc(1280px / 2);
+            max-width: calc(1280px / 2);
         }
     }
 

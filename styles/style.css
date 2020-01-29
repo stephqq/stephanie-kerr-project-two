@@ -331,6 +331,7 @@ button {
   position: relative;
   top: 2vh;
   left: 25px;
+  max-width: 50%;
 }
 
 section {
@@ -362,7 +363,7 @@ section {
 .grid .grid-two .grid-inner-wrapper,
 .grid .grid-three .grid-inner-wrapper,
 .grid .grid-four .grid-inner-wrapper {
-  width: calc(1280px / 2);
+  max-width: calc(1280px / 2);
 }
 
 .grid .grid-one {
@@ -505,3 +506,14 @@ footer {
           justify-content: center;
   padding: 10px 0;
 }
+
+/* Home Header Fix */
+@media (max-width: 1050px) {
+  .home-header h1 {
+    font-size: 8rem;
+  }
+}
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
