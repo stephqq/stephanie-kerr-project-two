@@ -1,5 +1,14 @@
 // NAV BAR
 
+nav i {
+    font-size: 3.5rem;
+    color: $white-shade;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    visibility: hidden;
+}
+
 .top-nav {
     display: flex;
     justify-content: center;
@@ -13,5 +22,15 @@
         a {
             color: $white-shade;
             padding: 0 25px;
+
+            &:hover,
+            &:focus {
+                border-bottom: 3px solid $accent;
+            }
+
+            &.selected:hover,
+            &.selected:focus {
+                border-bottom: none;
+            }
         }
 }

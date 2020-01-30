@@ -19,6 +19,7 @@ button {
     font-weight: 700;
     letter-spacing: 1px;
     line-height: 29px;
+    text-transform: uppercase;
 
     .selected {
         color: $accent;
@@ -27,6 +28,11 @@ button {
     & li:nth-of-type(3) {
         font-family: $heading-text;
         font-size: 3.5rem;
+
+        & a:hover,
+        & a:focus {
+            border-bottom: none;
+        }
     }
 }
 
@@ -65,4 +71,18 @@ button {
 .home-main h3 {
     font-size: 3.2rem;
     margin-bottom: 15px;
+}
+
+// BLOG PAGE TYPOGRAPHY
+
+.blog-header h1,
+.contact-header h1 {
+    color: $white-shade;
+    font-family: $heading-text;
+    font-size: 8rem;
+    line-height: 92px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: -15px;
+    text-transform: uppercase;
 }

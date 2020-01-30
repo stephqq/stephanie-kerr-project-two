@@ -3,20 +3,20 @@
 .home-header {
     background: $green-dark;
     text-transform: uppercase;
-}
 
-.heading-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10vh;
-
-    .heading-img-container {
-        height: 80vh;
-        position: relative;
-        top: 2vh;
-        left: 25px;
-        max-width: 50%;
+    .heading-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10vh;
+    
+        .heading-img-container {
+            height: 80vh;
+            position: relative;
+            top: 2vh;
+            left: 25px;
+            max-width: 50%;
+        }
     }
 }
 
@@ -106,6 +106,7 @@ section {
 
     &-img-container {
         width: 25%;
+        align-self: center;
         
         img {
             box-shadow: 20px 20px 0 0 $green-light;
