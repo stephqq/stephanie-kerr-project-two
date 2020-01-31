@@ -5,17 +5,17 @@
     text-transform: uppercase;
 
     .heading-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         padding-top: 10vh;
-    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+
         .heading-img-container {
-            height: 80vh;
+            width: 50%;
             position: relative;
-            top: 2vh;
-            left: 25px;
-            max-width: 50%;
+            top: 50px;
+            padding-left: 30px;
         }
     }
 }

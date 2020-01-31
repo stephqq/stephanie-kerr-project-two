@@ -357,24 +357,24 @@ nav i {
 }
 
 .home-header .heading-container {
+  padding-top: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 10vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90vh;
 }
 
 .home-header .heading-container .heading-img-container {
-  height: 80vh;
+  width: 50%;
   position: relative;
-  top: 2vh;
-  left: 25px;
-  max-width: 50%;
+  top: 50px;
+  padding-left: 30px;
 }
 
 section {
@@ -548,6 +548,10 @@ section {
   position: relative;
 }
 
+.blog-aside div {
+  background: #fff;
+}
+
 .contact-header {
   height: 50vh;
   background: url(../assets/contact-image-1.jpg);
@@ -595,14 +599,23 @@ footer {
 
 /* HOME HEADER FIX */
 @media (max-width: 850px) {
-  .home-header {
-    height: 50vh;
+  .home-header h1 {
+    right: -100px;
+    z-index: 5;
   }
-  .heading-img-container {
-    display: none;
-  }
-  .heading-container {
+  .home-header .heading-container {
     height: 100%;
+  }
+  .home-header .heading-container .heading-img-container {
+    left: -50px;
+    top: 0;
+  }
+  .home-header .heading-container .heading-img-container img {
+    border-radius: 50%;
+    -o-object-fit: none;
+       object-fit: none;
+    -webkit-box-shadow: 20px 20px 0 0 #709B6B;
+            box-shadow: 20px 20px 0 0 #709B6B;
   }
   section {
     padding: 75px 0;
@@ -612,6 +625,21 @@ footer {
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .top-nav li:nth-of-type(3) {
+    display: none;
+  }
+  .heading-content-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50vh;
+  }
+  .heading-content-container h1 {
+    right: -25px;
+  }
+  .heading-img-container {
     display: none;
   }
   section {
@@ -670,9 +698,6 @@ footer {
   }
   button {
     font-size: 1.6rem;
-  }
-  .home-header .heading-container {
-    padding: 0 0 0 50px;
   }
   .home-header .heading-container h1 {
     font-size: 6rem;
