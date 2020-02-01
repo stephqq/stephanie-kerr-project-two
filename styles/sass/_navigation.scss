@@ -3,10 +3,53 @@
 nav i {
     font-size: 3.5rem;
     color: $white-shade;
-    position: absolute;
+    position: fixed;
     top: 25px;
     right: 25px;
     visibility: hidden;
+    z-index: 15;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.mobile-nav {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    background: $green-dark;
+    z-index: 10;
+    transition: all .5s;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    li {
+        padding: 10px 0;
+    }
+
+    a {
+        color: $white-shade;
+        font-size: 3rem;
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus {
+            color: $accent;
+        }
+    }
+}
+
+#menu-toggle:checked ~ .mobile-nav {
+    left: 0;
 }
 
 .top-nav {

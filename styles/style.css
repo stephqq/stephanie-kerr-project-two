@@ -362,10 +362,62 @@ button:hover, button:focus {
 nav i {
   font-size: 3.5rem;
   color: #F6F6F6;
-  position: absolute;
+  position: fixed;
   top: 25px;
   right: 25px;
   visibility: hidden;
+  z-index: 15;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.mobile-nav {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  background: #345231;
+  z-index: 10;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.mobile-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.mobile-nav li {
+  padding: 10px 0;
+}
+
+.mobile-nav a {
+  color: #F6F6F6;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.mobile-nav a:hover, .mobile-nav a:focus {
+  color: #E4A436;
+}
+
+#menu-toggle:checked ~ .mobile-nav {
+  left: 0;
 }
 
 .top-nav {
