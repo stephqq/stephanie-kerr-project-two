@@ -26,11 +26,9 @@ form {
         padding: 30px;
         margin-bottom: 20px;
 
-        &::placeholder,
-        &::-webkit-input-placeholder,
-        &:-ms-input-placeholder {
+        &::placeholder {
             opacity: 1;
-            color: inherit;
+            color: $black;
         }
     }
 }
