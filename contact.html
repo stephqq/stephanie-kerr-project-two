@@ -12,9 +12,10 @@
 </head>
 
 <body>
+    <a href="#maincontent" class="skip-link">Skip to main content.</a>
     <header class="contact-header">
         <nav>
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" aria-hidden="true"></i><span class="visually-hidden">menu</span>
             <ul class="top-nav">
                 <li><a href="./index.html">home</a></li>
                 <li><a href="./index.html#about">about</a></li>
@@ -27,6 +28,31 @@
             <h1>contact me</h1>
         </div>
     </header>
+
+    <main class="contact-main wrapper" id="maincontent">
+        <aside class="contact-aside">
+            <a href="#"><i class="fab fa-facebook-f"></i> <span class="visually-hidden">facebook</span></a>
+            <a href="#"><i class="fab fa-twitter"></i> <span class="visually-hidden">twitter</span></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i> <span class="visually-hidden">linkedin</span></a>
+            <a href="#"><i class="fab fa-instagram"></i> <span class="visually-hidden">instagram</span></a>
+            <p>info@email.com</p>
+            <p>123 - 456 - 7890</p>
+            <p>123 Queen Street West, Unit 10</p>
+            <p>Toronto, Ontario</p>
+            <p>M5V2DS</p>
+        </aside>
+        <section class="contact-form">
+            <form action="#">
+                <label for="name" class="visually-hidden">Name</label>
+                <input type="text" name="name" placeholder="Name">
+                <label for="emailaddress" class="visually-hidden">Email address</label>
+                <input type="email" name="emailaddress" placeholder="Email address">
+                <label for="comment" class="visually-hidden">Comment</label>
+                <textarea name="comment" placeholder="Comment"></textarea>
+                <button type="submit">submit</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
         Copyright &copy; 2018 HackerYou

@@ -73,7 +73,7 @@ button {
     margin-bottom: 15px;
 }
 
-// BLOG PAGE TYPOGRAPHY
+// BLOG & CONTACT PAGE TYPOGRAPHY
 
 .blog-header h1,
 .contact-header h1 {
@@ -85,4 +85,42 @@ button {
     position: absolute;
     bottom: -15px;
     text-transform: uppercase;
+}
+
+.blog-main {
+    h2,
+    h3 {
+        font-family: $heading-text;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    .blog-about a {
+        color: $green-light;
+        font-weight: 700;
+
+        &:hover,
+        &:focus {
+            border-bottom: 3px solid $accent;
+        }
+    }
+
+    .blog-recent-posts a {
+        color: $black;
+        line-height: 3.2rem;
+
+        &:hover,
+        &:focus {
+            font-weight: 700;
+        }
+    }
 }

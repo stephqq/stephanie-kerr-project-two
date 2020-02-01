@@ -3,18 +3,73 @@
 // HEADER STYLES - BLOG PAGE
 
 .blog-header {
-    height: 50vh;
     background: url(../assets/blog-image-1.jpg);
-    background-size: cover;
-    position: relative;
+}
+
+// GENERAL STYLES - BLOG PAGE
+
+.blog-main {
+    div,
+    article {
+        background: $white;
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+
+    article,
+    .comment:last-of-type {
+        margin-bottom: 35px;
+    }
+
+    p:last-of-type,
+    .comment p {
+        margin-bottom: 0;
+    }
 }
 
 // ASIDE STYLES - BLOG PAGE
 
 .blog-aside {
-    div {
-        background: $white;
+    img {
+        margin-bottom: 25px;
+    }
+
+    .blog-recent-posts a {
+        padding-left: 30px;
+
+        &::before {
+            content: '.';
+            position: relative;
+            right: 15px;
+            top: -5px;
+        }
     }
 }
 
 // BLOG POST STYLES - BLOG PAGE
+
+article,
+.comment:last-of-type {
+    border-bottom: 7px solid $green-light;
+}
+
+div.comment-img-container,
+div.comment-content-container {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.comment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-img-container {
+        width: 90px;
+        height: 89px;
+    }
+
+    &-content-container {
+        width: calc(100% - 90px - 20px);
+    }
+}

@@ -215,6 +215,19 @@ body {
   margin: 0 auto;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 p {
   margin-bottom: 25px;
 }
@@ -296,6 +309,40 @@ button {
   position: absolute;
   bottom: -15px;
   text-transform: uppercase;
+}
+
+.blog-main h2,
+.blog-main h3 {
+  font-family: "Abril Fatface", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.blog-main h2 {
+  font-size: 3.2rem;
+}
+
+.blog-main h3 {
+  font-size: 2.4rem;
+}
+
+.blog-main .blog-about a {
+  color: #709B6B;
+  font-weight: 700;
+}
+
+.blog-main .blog-about a:hover, .blog-main .blog-about a:focus {
+  border-bottom: 3px solid #E4A436;
+}
+
+.blog-main .blog-recent-posts a {
+  color: #1F1F1F;
+  line-height: 3.2rem;
+}
+
+.blog-main .blog-recent-posts a:hover, .blog-main .blog-recent-posts a:focus {
+  font-weight: 700;
 }
 
 button {
@@ -541,22 +588,197 @@ section {
   padding-bottom: 50px;
 }
 
-.blog-header {
+.blog-header,
+.contact-header {
   height: 50vh;
-  background: url(../assets/blog-image-1.jpg);
   background-size: cover;
   position: relative;
 }
 
-.blog-aside div {
+.blog-main,
+.contact-main {
+  padding: 85px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-main aside,
+.contact-main aside {
+  width: 30%;
+}
+
+.blog-main section,
+.contact-main section {
+  width: calc(70% - 30px);
+  padding: 0;
+}
+
+.blog-header {
+  background: url(../assets/blog-image-1.jpg);
+}
+
+.blog-main div,
+.blog-main article {
   background: #fff;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.blog-main article,
+.blog-main .comment:last-of-type {
+  margin-bottom: 35px;
+}
+
+.blog-main p:last-of-type,
+.blog-main .comment p {
+  margin-bottom: 0;
+}
+
+.blog-aside img {
+  margin-bottom: 25px;
+}
+
+.blog-aside .blog-recent-posts a {
+  padding-left: 30px;
+}
+
+.blog-aside .blog-recent-posts a::before {
+  content: '.';
+  position: relative;
+  right: 15px;
+  top: -5px;
+}
+
+article,
+.comment:last-of-type {
+  border-bottom: 7px solid #709B6B;
+}
+
+div.comment-img-container,
+div.comment-content-container {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comment-img-container {
+  width: 90px;
+  height: 89px;
+}
+
+.comment-content-container {
+  width: calc(100% - 90px - 20px);
 }
 
 .contact-header {
-  height: 50vh;
   background: url(../assets/contact-image-1.jpg);
-  background-size: cover;
-  position: relative;
+}
+
+.contact-main {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact-main aside {
+  background: #fff;
+  padding: 30px;
+}
+
+.contact-main p {
+  margin-bottom: 0;
+}
+
+.contact-main p:first-of-type {
+  margin: 25px 0;
+  font-weight: 700;
+}
+
+.contact-main i {
+  font-size: 3.5rem;
+}
+
+.contact-main i:not(:last-child) {
+  padding-right: 25px;
+}
+
+.contact-main a {
+  color: #345231;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.contact-main a:hover, .contact-main a:focus {
+  color: #E4A436;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+form input {
+  width: calc(50% - 10px);
+}
+
+form textarea,
+form button {
+  width: 100%;
+}
+
+form textarea {
+  height: 35vh;
+}
+
+form input,
+form textarea {
+  border: none;
+  resize: none;
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+form input::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+form input:-ms-input-placeholder,
+form textarea:-ms-input-placeholder {
+  opacity: 1;
+}
+
+form input::-ms-input-placeholder,
+form textarea::-ms-input-placeholder {
+  opacity: 1;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  opacity: 1;
 }
 
 footer {
@@ -576,6 +798,9 @@ footer {
   .home-header h1 {
     font-size: 8rem;
   }
+  .contact-main i:not(:last-child) {
+    padding-right: 15px;
+  }
 }
 
 /* Portrait tablet and small desktops */
@@ -591,6 +816,14 @@ footer {
   }
   .journey-content-container {
     padding-left: 50px;
+  }
+  .blog-recent-posts a,
+  input,
+  textarea {
+    font-size: 1.6rem;
+  }
+  .contact-main i:not(:last-child) {
+    padding-right: 5px;
   }
   footer {
     font-size: 1.6rem;
@@ -686,6 +919,27 @@ footer {
   .grid .grid-three {
     margin: 50px 0;
   }
+  .blog-main h2 {
+    font-size: 2.5rem;
+  }
+  .blog-main h3 {
+    font-size: 2rem;
+  }
+  .blog-main section,
+  .contact-main section {
+    width: 100%;
+  }
+  .blog-main aside,
+  .contact-main aside {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 75%;
+    margin: 50px auto 0 auto;
+  }
+  .contact-main aside {
+    text-align: center;
+  }
 }
 
 /* Landscape phones and down */
@@ -759,5 +1013,27 @@ footer {
   }
   .summary ul li .b-padding {
     padding-bottom: 0;
+  }
+  .comment-content-container {
+    width: 100%;
+  }
+  .blog-main,
+  .contact-main {
+    padding: 35px 0;
+  }
+  .blog-main aside,
+  .contact-main aside {
+    width: 100%;
+  }
+  form input {
+    width: 100%;
+  }
+}
+
+/* contact header fix for iphone */
+@media (max-width: 430px) {
+  .contact-header h1 {
+    font-size: 5.5rem;
+    bottom: -25px;
   }
 }

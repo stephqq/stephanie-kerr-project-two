@@ -1,0 +1,33 @@
+// FORM STYLING
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    input {
+        width: calc(50% - 10px);
+    }
+
+    textarea,
+    button {
+        width: 100%;
+    }
+
+    textarea {
+        height: 35vh;
+    }
+
+    input,
+    textarea {
+        border: none;
+        resize: none;
+        background: $white;
+        padding: 30px;
+        margin-bottom: 20px;
+
+        &::placeholder {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+// GENERAL LAYOUT STYLING FOR BLOG & CONTACT PAGES
+
+.blog-header,
+.contact-header {
+    height: 50vh;
+    background-size: cover;
+    position: relative;
+}
+
+.blog-main,
+.contact-main {
+    padding: 85px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    aside {
+        width: 30%;
+    }
+
+    section {
+        width: calc(70% - 30px);
+        padding: 0;
+    }
+}

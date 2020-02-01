@@ -3,8 +3,44 @@
 // HEADER STYLES - CONTACT PAGE
 
 .contact-header {
-    height: 50vh;
     background: url(../assets/contact-image-1.jpg);
-    background-size: cover;
-    position: relative;
 }
+
+// ASIDE STYLES - CONTACT PAGE
+
+.contact-main {
+    align-items: flex-start;
+
+    aside {
+        background: $white;
+        padding: 30px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    p:first-of-type {
+        margin: 25px 0;
+        font-weight: 700;
+    }
+
+    i {
+        font-size: 3.5rem;
+
+        &:not(:last-child) {
+            padding-right: 25px;
+        }
+    }
+
+    a {
+        color: $green-dark;
+        transition: all .3s;
+
+        &:hover,
+        &:focus {
+            color: $accent;
+        }
+    }
+}
+

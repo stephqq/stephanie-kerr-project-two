@@ -12,9 +12,10 @@
 </head>
 
 <body>
+    <a href="#maincontent" class="skip-link">Skip to main content.</a>
     <header class="home-header">
         <nav>
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars" aria-hidden="true"></i><span class="visually-hidden">menu</span>
             <ul class="top-nav">
                 <li><a href="./index.html" class="selected">home</a></li>
                 <li><a href="./index.html#about">about</a></li>
@@ -33,7 +34,7 @@
             </div> <!-- ./heading-img-container -->
         </div> <!-- ./heading-container -->
     </header>
-    <main class="home-main">
+    <main class="home-main" id="maincontent">
         <section class="who-is-willow wrapper" id="about">
             <h2>who's willow?</h2>
             <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis
